@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('run python') {
+    stage('Init') {
       steps {
-        sh 'python Main.py'
+        echo 'This is a pipeline'
       }
     }
 
