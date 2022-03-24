@@ -15,8 +15,8 @@ pipeline {
             steps {
                 //This sh step runs the Python command to compile your application and
                 //its calc library into byte code files, which are placed into the sources workspace directory
-                sh 'pip install --upgrade pip'
-                sh 'pip install boto3'
+                sh 'sudo pip install --upgrade pip'
+                sh 'sudo pip install boto3'
                 sh 'python -m py_compile Main.py'
             }
         }
